@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajes con Amor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <h1>Para personas especiales</h1>
+        <p>Haz clic en un nombre para ver tu mensaje:</p>
+        
+        <div class="button-group">
+            <button onclick="mostrarMensaje('Guadalupe')">Guadalupe</button>
+            <button onclick="mostrarMensaje('Betsy')">Betsy</button>
+        </div>
+
+        <!-- Aquí aparecerá el mensaje -->
+        <div id="mensaje-contenedor" class="mensaje-box hidden">
+            <p id="texto-amor"></p>
+            <button onclick="cerrarMensaje()" class="btn-cerrar">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
